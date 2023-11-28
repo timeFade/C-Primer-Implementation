@@ -11,8 +11,8 @@ git init
 
 Add a remote repository named "origin" to your local repository .
 
- By executing the `git remote add origin <url>` command, you add a remote repository named "origin" to your local repository and associate it with the specified URL. This allows you to refer to this remote repository as "origin" in subsequent operations, such as pushing or pulling code.
-
+By executing the `git remote add origin <url>` command, you add a remote repository named "origin" to your local repository and associate it with the specified URL. This allows you to refer to this remote repository as "origin" in subsequent operations, such as pushing or pulling code.
+I supposed to use SSH because it faster than HTTPS.
 ```shell
 git remote add origin <url>
 ```
