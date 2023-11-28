@@ -34,3 +34,47 @@ Before pushing the modified files or directories to the remote repository, to st
 git push <url> <local branch name>
 ```
 
+# How use CMAKE in windows
+
+Write a C++ source file `HelloWorld.cpp` that outputs "Hello World".
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "Hello World !!" << endl;
+    
+    return 0;
+}
+```
+
+Create a `CMakeLists.txt` file and set the CMake version, compliers, project name, and executable information.
+
+```cmake
+cmake_minimum_required(VERSION 3.10) #the minimum required of cmake
+
+set(CMAKE_C_COMPILER "gcc") # set the compiler
+set(CMKAE_CXX_COMPILER "g++")
+
+project(C-Primer-Implementation) # set the project name
+
+add_executable(out HelloWorld.cpp) # set the executable
+```
+
+Generate build files that are suitable for the MinGW Makefiles build system.
+
+```shell
+cmake . -G "MinGW Makefiles"	
+```
+
+Build a CMake project.
+
+The `cmake --build` command automatically detects the build system specified in the generated build files(e.g., Makefile) and initiates the build process.
+
+``` shell
+cmake --build <build_directory>
+```
+
+Replace `<build_directory>` with the path to the directory where the build files are located. The command will execute the build process using the detected build system.
