@@ -1,0 +1,3 @@
+F:/clearn/primer_work/C-Primer-Implementation/CMakeFiles/out.dir
+F:/clearn/primer_work/C-Primer-Implementation/CMakeFiles/edit_cache.dir
+F:/clearn/primer_work/C-Primer-Implementation/CMakeFiles/rebuild_cache.dir
